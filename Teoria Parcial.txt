@@ -1,0 +1,36 @@
+punto 1: ¿Es necesario usar un archivo para guardar los alquileres históricos?
+No, no es necesario.
+¿Deberías utilizar una Lista para gestionar los productos disponibles en la tienda?
+Sí, hay que usar una lista. 
+
+Punto 2: ¿Es necesario guardar en un archivo las actividades del parque?
+Depende. Si las actividades son fijas y no cambian , puede no ser necesario guardarlo en un archivo. Pero si las actividades cambian, deberian usar un archivo para guardarlas.
+
+¿Se debería usar un Diccionario para gestionar las actividades?
+No necesariamente. Con una lista deberia ser suficiente para gestionar las actividades.
+
+Punto 3:¿Deberías usar un Diccionario para almacenar las reservas de los clientes?
+Sí, esto permitiria acceder rapido a la reserva de un cliente, faciliando el tranajo.
+
+¿Es necesario persistir las reservas canceladas?
+No, no es necesario. No se requiere llevar un historial de reservas canceladas.
+
+Punto 4:¿Es necesario guardar en un archivo el historial completo de compras de cada cliente?
+No, no es necesario, porque el sistema solo necesita calcular los puntos de fidelidad acumulados, no almacenar el historial completo de compras.
+
+¿Es útil el encapsulamiento en este caso?
+Sí, el encapsulamiento es útil. Protege los datos de cada cliente, como el número de cliente y los puntos de fidelidad.
+
+punto 5:¿Se requiere un Enum para representar el tipo de vehículo?
+Sí, se necesita Enum para representar el tipo de vehículo. Para manejar de forma eficiente los valores predefinidos que no cambiarán, como los tipos de vehículos.
+
+¿Es necesario almacenar en un archivo la información de los vehículos que ya salieron del estacionamiento?
+No, no es necesario. la consigna dice que no se requiere llevar un registro histórico de los vehículos que ya salieron, por lo que la información puede eliminarse del sistema una vez que el vehículo sale.
+ 
+bonus:
+publico (public):  Un public es accesible desde cualquier parte del programa. Es decir, cualquier clase o código en cualquier archivo puede acceder a ese miembro.
+Se utiliza para permitir un acceso sin restricciones. Generalmente, métodos y propiedades que deben ser accesibles para otras clases o programas.
+privado (private): Un private solo es accesible desde dentro de la clase en la que está definido. Ninguna otra clase puede acceder a un miembro privado.
+Se utiliza para encapsular los detalles de implementación, ocultando datos que solo deberían ser manipulados por métodos internos de la clase.
+protegido (protected):Un protected es accesible desde dentro de la clase en la que está definido y también desde subclases. Sin embargo, no es accesible desde fuera de estas clases, ni siquiera desde una instancia de la clase.
+Se utiliza para permitir que las clases derivadas puedan acceder y utilizar ciertos miembros de la clase base.
